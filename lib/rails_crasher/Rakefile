@@ -1,0 +1,10 @@
+# frozen_string_literal: true
+
+require 'bundler/gem_tasks'
+task default: :spec
+
+require 'rake/extensiontask'
+
+Rake::ExtensionTask.new('rails_crasher') do |ext|
+  ext.lib_dir = 'ext/rails_crasher'
+end

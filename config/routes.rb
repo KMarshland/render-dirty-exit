@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'dirty_exit' => 'main#dirty_exit'
+  get 'dirty_exit' => 'main#dirty_exit', as: :dirty_exit
 
   root 'main#home'
 
